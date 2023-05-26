@@ -1,9 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <router-link to="/" class="navbar-brand">Red Creative</router-link>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <router-link to="/tutorials" class="nav-link">Tutorials</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/add" class="nav-link">Add</router-link>
+      </li>
+    </div>
   </nav>
-  <router-view />
+
+  <div class="container mt-3">
+    <h2>Vue 3 Firebase CRUD example</h2>
+    <router-view />
+  </div>
 </template>
 
 <style>
